@@ -5,7 +5,8 @@
 }
 
 .items-container h1 {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    margin-left: 15px;
 }
 
 .items-container h1 :after {
@@ -36,11 +37,16 @@
 /* ===================responsive code ================ */
 
 @media (max-width:768px) {
+    .items-container {
+        padding: 30px 5px;
+        background-color: #F6F6F6;
+        margin: 40px auto;
+    }
+
     .items-grid-content {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding: 50px 20px;
         margin: 20px auto;
         box-sizing: border-box;
     }
@@ -51,7 +57,6 @@
         width: 100%;
         display: grid;
         grid-template-columns: auto;
-        padding: 50px 20px;
         margin: 20px auto;
         box-sizing: border-box;
     }
