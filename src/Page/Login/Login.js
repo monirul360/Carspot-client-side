@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Social from '../Social/Social';
 import './Login.css';
 const Login = () => {
     return (
@@ -15,6 +16,13 @@ const Login = () => {
                         <input type="submit" value="Login With Us" />
                     </form><br />
                     <Link id='register-style' to='/register'>Create new account</Link>
+                    <br />
+                    <div className="flex-or">
+                        <div></div>
+                        <h3>OR</h3>
+                        <div></div>
+                    </div>
+                    <Social></Social>
                 </div>
             </div>
         </div>
