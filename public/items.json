@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "Porsche 911 Carrera ",
+        "price": "920,000",
+        "description": "Bank Leased 5 Year plan 2013 Honda Civic 1.8 Vti Oriel Prosmatec Automatic ( New Shape ) Attractive Silver Color 1 year installments paid Lahore Reg number Well Maintained Insurance + tracker etc included Options: Sunroof",
+        "quantity": "20",
+        "supplier": "Monirul islam",
+        "img": "https://i.ibb.co/2MrfTKX/8.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Ford Shelby GT500 Coupe",
+        "price": "117,000",
+        "description": "The Empire State Building is a 102-story Art Deco skyscraper in Midtown Manhattan, New York City. The building was designed by Shreve, Lamb & Harmon and built from 1930 to 1931",
+        "quantity": "27",
+        "supplier": "Imon Hasan",
+        "img": "https://i.ibb.co/4f1f9FJ/14.jpg"
+    },
+    {
+        "id": 3,
+        "name": "McLaren F1 Sports Car",
+        "price": "77,000",
+        "description": "The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor in New York City, in the United States.",
+        "quantity": "35",
+        "supplier": "Rabbi Hasan",
+        "img": "https://i.ibb.co/V3fwBP7/13.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Audi A4 Quattro Premium",
+        "price": "50,00",
+        "description": "Heidelberg Castle is a ruin in Germany and landmark of Heidelberg. The castle ruins are among the most important Renaissance structures north of the Alps.",
+        "quantity": "18",
+        "supplier": "Sowrov Hasan",
+        "img": "https://i.ibb.co/jTXnd6p/6.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Bugatti Veyron Super Sport",
+        "price": "999,000",
+        "description": "Linderhof Palace is a Schloss in Germany, in southwest Bavaria near the village of Ettal. It is the smallest of the three palaces built by King Ludwig II of Bavaria and the only one which he lived to see completed.",
+        "quantity": "44",
+        "supplier": "Sabbir Hasan",
+        "img": "https://i.ibb.co/9W2nzMS/3.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Honda Civic Sports Edition",
+        "price": "205,000",
+        "description": "Tiananmen Square or Tian'anmen Square is a city square in the city center of Beijing, China, named after the eponymous Tiananmen located to its north, which separates it from the Forbidden City",
+        "quantity": "23",
+        "supplier": "Jihad",
+        "img": "https://i.ibb.co/v1wgXqk/2.jpg"
+    }
+]
