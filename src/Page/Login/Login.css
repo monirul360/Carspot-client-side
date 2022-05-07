@@ -43,6 +43,12 @@
     text-transform: uppercase;
 }
 
+#reset-pass {
+    color: blue;
+    font-weight: bold;
+    font-size: 18px;
+}
+
 #register-style {
     color: blue;
     font-weight: bold;
