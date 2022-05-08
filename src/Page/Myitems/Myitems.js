@@ -4,20 +4,35 @@ import auth from '../../firebase';
 import './Myitems.css';
 const Myitems = () => {
     const [user] = useAuthState(auth);
-    const [order, setOrder] = useState([]);
+    const [myitems, setMyitems] = useState([]);
     useEffect(() => {
-        const url = `http://localhost:5000/myitems?email=${user.email}`;
+        const url = `https://arcane-mountain-88654.herokuapp.com/myitems?email=${user?.email}`;
         fetch(url)
             .then(Response => Response.json())
-            .then(data => setOrder(data))
+            .then(data => setMyitems(data))
     }, [user])
+    // Delete your my items
+    const myitemsDelete = id => {
+        const deleteAlt = window.confirm();
+        if (deleteAlt) {
+            const delurl = `https://arcane-mountain-88654.herokuapp.com/myitems/${id}`;
+            fetch(delurl, {
+                method: 'DELETE',
+            })
+                .then(Response => Response.json())
+                .then(data => {
+                    const remaing = myitems.filter(m => m._id !== id);
+                    setMyitems(remaing);
+                })
+        }
+    }
     return (
         <div>
             <div className="myitems-container">
                 <h1 style={{ marginBottom: '20px', textAlign: 'center' }}>My Items</h1>
                 <div className="myitems-show">
                     {
-                        order.map(show =>
+                        myitems.map(show =>
                             <div className='show-myitem' key={show._id}>
                                 <div className='show-myitem-img' >
                                     <img src={show.img} alt="" />
@@ -28,7 +43,7 @@ const Myitems = () => {
                                     <p>Supplier : {show.supplier}</p>
                                     <p>Quantity : {show.quantity}</p>
                                     <p>Price : ${show.price}</p>
-                                    <button id='show-myitem-del'>DELETE</button>
+                                    <button onClick={() => myitemsDelete(show._id)} id='show-myitem-del'>DELETE</button>
                                 </div>
                             </div>
                         )
