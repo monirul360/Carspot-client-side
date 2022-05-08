@@ -1,8 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './Item.css';
 const Item = ({ item }) => {
     const sliceDes = item.description.slice(0, 110);
+    const Navigate = useNavigate();
+    const handleButton = id => {
+        Navigate(`/inventory/${id}`);
+    }
     return (
         <div>
             <div className="item-container">
@@ -23,11 +27,11 @@ const Item = ({ item }) => {
                             <li>Supplier: {item.supplier}</li>
                             <li>Quantity: {item.quantity}</li>
                         </ul>
-                        <Link to='/' id='item-update'>update</Link>
+                        <button onClick={() => handleButton(item._id)} id='item-update'>update</button>
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

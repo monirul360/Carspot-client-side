@@ -136,15 +136,14 @@ a {
 }
 
 #logout {
-    padding: 10px;
-    background-color: #EE580F;
-    color: white;
+    padding: 8px;
+    color: #ffffff;
+    background-color: #E52D27;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    margin-left: 20px;
 }
 
 /* ==========Responsive code ============== */
