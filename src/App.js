@@ -5,11 +5,13 @@ import Error from './Page/Error/Error';
 import Home from './Page/Home/Home/Home';
 import Inventory from './Page/Inventory/Inventory';
 import Login from './Page/Login/Login';
+import Myitems from './Page/Myitems/Myitems';
 import Private from './Page/Private/Private';
 import Register from './Page/Register/Register';
 import Footer from './Page/Share/Footer/Footer';
 import Header from './Page/Share/Header/Header';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
     <div >
@@ -20,6 +22,7 @@ function App() {
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/additem' element={<Additem></Additem>}></Route>
+        <Route path='/myitems' element={<Myitems></Myitems>}></Route>
         <Route path='/inventory/:id' element={
           <Private>
             <Inventory></Inventory>
@@ -28,6 +31,7 @@ function App() {
         <Route path='*' element={<Error></Error>}></Route>
       </Routes >
       <Footer></Footer>
+      <ToastContainer />
     </div >
   );
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { toast } from 'react-toastify';
 import auth from '../../firebase';
 import './Additem.css';
 const Additem = () => {
@@ -25,7 +26,7 @@ const Additem = () => {
         })
             .then(response => response.json())
             .then(data => {
-                console.log('Success:', data);
+                toast('Successful add item');
             })
     }
     return (

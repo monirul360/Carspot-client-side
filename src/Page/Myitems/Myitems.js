@@ -1,0 +1,42 @@
+import React, { useEffect, useState } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase';
+import './Myitems.css';
+const Myitems = () => {
+    const [user] = useAuthState(auth);
+    const [order, setOrder] = useState([]);
+    useEffect(() => {
+        const url = `http://localhost:5000/myitems?email=${user.email}`;
+        fetch(url)
+            .then(Response => Response.json())
+            .then(data => setOrder(data))
+    }, [user])
+    return (
+        <div>
+            <div className="myitems-container">
+                <h1 style={{ marginBottom: '20px', textAlign: 'center' }}>My Items</h1>
+                <div className="myitems-show">
+                    {
+                        order.map(show =>
+                            <div className='show-myitem' key={show._id}>
+                                <div className='show-myitem-img' >
+                                    <img src={show.img} alt="" />
+                                </div>
+                                <div className='show-myitem-info'>
+                                    <p>Name : {show.name}</p>
+                                    <p>Email : {show.email}</p>
+                                    <p>Supplier : {show.supplier}</p>
+                                    <p>Quantity : {show.quantity}</p>
+                                    <p>Price : ${show.price}</p>
+                                    <button id='show-myitem-del'>DELETE</button>
+                                </div>
+                            </div>
+                        )
+                    }
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Myitems;

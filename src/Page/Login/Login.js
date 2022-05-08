@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import auth from '../../firebase';
 import Social from '../Social/Social';
 import './Login.css';
@@ -32,10 +33,10 @@ const Login = () => {
     const resetPassword = () => {
         if (email) {
             sendPasswordResetEmail(email);
-            alert('Sent email');
+            toast('Sent email');
         } else {
             sendPasswordResetEmail(email);
-            alert('Please enter your email address');
+            toast('Please enter your email address');
         }
     }
     const signiUser = e => {

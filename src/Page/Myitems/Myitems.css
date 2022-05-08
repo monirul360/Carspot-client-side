@@ -1,0 +1,36 @@
+.myitems-container {
+    width: 100%;
+    padding: 50px 20px;
+    background-color: #F6F6F6;
+    margin: 20px auto;
+}
+
+.myitems-show {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.show-myitem {
+    margin: 20px;
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 2px 5px -1px rgba(0, 0, 0, 0.16);
+}
+
+.show-myitem img {
+    width: 100%;
+}
+
+.show-myitem-info {
+    font-size: 18px;
+    padding: 20px;
+    color: rgb(51, 48, 48);
+}
+
+#show-myitem-del {
+    padding: 8px 30px;
+    margin-top: 10px;
+    background-color: #bf1919;
+    color: white;
+    font-size: 17px;
+    border: none;
+}
