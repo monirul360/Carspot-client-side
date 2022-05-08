@@ -1,25 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import Useinventory from '../../Hooks/Useinventory';
 import Item from '../Item/Item';
 import './Items.css';
 const Items = () => {
-    const [items, setItems] = useState([]);
-    useEffect(() => {
-        fetch('https://arcane-mountain-88654.herokuapp.com/items')
-            .then(Response => Response.json())
-            .then(data => setItems(data));
-    }, [])
+    const [items, setItems] = Useinventory();
+    const itemsSlice = items.slice(0, 6);
     return (
         <>
             <div className="items-container">
                 <h1>My <span id='items-title-span'>Items</span></h1>
                 <div className="items-grid-content">
                     {
-                        items.map(item => <Item key={item._id}
+
+                        itemsSlice.map(item => <Item key={item._id}
                             item={item}
                         >
                         </Item>)
                     }
                 </div>
+                <Link id='manage-Inventories' to='/Manage'>Manage Inventories</Link>
             </div>
         </>
     );
