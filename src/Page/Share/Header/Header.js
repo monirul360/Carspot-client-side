@@ -37,9 +37,11 @@ const Header = () => {
                             <ul>
                                 <li><Link to='/home'>Home</Link></li>
                                 <li><Link to='/blog'>Blog</Link></li>
-                                <li><Link to='/about'>About</Link></li>
                                 {user ?
                                     <>
+                                        <li><Link to='Manage'>Manage Items</Link></li>
+                                        <li><Link to='additem'>Add Item</Link></li>
+                                        <li><Link to='myitems'>My items</Link></li>
                                         <li id='logout' onClick={logout}>Log out</li>
                                     </>
                                     :
