@@ -1,0 +1,130 @@
+.inventory-container {
+    padding: 50px 20px;
+    background-color: #F6F6F6;
+}
+
+.inventory-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inventory-flex img {
+    width: 100%;
+}
+
+.inventory-info {
+    width: 60%;
+    margin: 20px;
+}
+
+.inventory-other-info {
+    width: 40%;
+    margin: 20px;
+    text-align: center;
+}
+
+.inventory-other-info h3 {
+    margin-bottom: 15px;
+    color: #232323;
+}
+
+.other-info {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.inventory-Description {
+    border: 1px solid #e7e7e7;
+    border-radius: 1px;
+    background: #fff;
+    padding: 40px 30px;
+    margin-top: 20px;
+}
+
+.inventory-Description h2 {
+    margin-bottom: 20px;
+    color: #232323;
+}
+
+.inventory-Description p {
+    font-size: 18px;
+    color: #363434;
+}
+
+.singleprice-tag::before {
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid #bf1919;
+    border-top: 30px solid transparent;
+    content: "";
+    height: 0;
+    left: -29px;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+
+.singleprice-tag {
+    background-color: #bf1919;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    color: #fff;
+    display: inline-block;
+    font-size: 32px;
+    font-weight: bold;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 30px;
+    position: relative;
+    text-indent: -6px;
+    text-shadow: 1px 1px 1px #921313;
+    transform-origin: 88% 10% 0;
+}
+
+.delivered button {
+    width: 90%;
+    display: block;
+    padding: 10px;
+    margin: 25px auto;
+    font-size: 20px;
+    background-color: #26ABD4;
+    border: none;
+    color: white;
+}
+
+.quantity input {
+    width: 100%;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    box-shadow: none;
+    color: #555;
+    padding: 13px 12px;
+    transition: all 0.2s;
+    margin: 7px auto;
+    font-size: 17px;
+    outline: none;
+}
+
+.quantity input[type=submit] {
+    background-color: #bf1919;
+    border: none;
+    color: white;
+}
+
+/* =====================responsive code ================ */
+
+@media (max-width:768px) {
+    .inventory-flex {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inventory-flex>div {
+        width: 95%;
+        margin: auto;
+    }
+}
