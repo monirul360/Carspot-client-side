@@ -1,0 +1,49 @@
+.additems-container {
+    padding: 50px 20px;
+    margin: 40px auto;
+    background-color: #F6F6F6;
+}
+
+.additems-form {
+    width: 60%;
+    padding: 30px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 5px 5px 20px black;
+}
+
+.additems-form p {
+    font-size: 18px;
+}
+
+.additems-form input {
+    width: 100%;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    box-shadow: none;
+    color: #555;
+    font-size: 16px;
+    margin: 8px auto;
+    padding: 10px 12px;
+    transition: all 0.2s cubic-bezier(0, 0, 0.58, 1) 0s;
+}
+
+.additems-form input[type=submit] {
+    background-color: #bf1919;
+    color: #F6F6F6;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* ==============responsive code ================= */
+@media (max-width:768px) {
+    .additems-form {
+        width: 90%;
+        padding: 30px;
+        margin: 20px auto;
+        background-color: white;
+        box-shadow: 5px 5px 20px black;
+    }
+}
