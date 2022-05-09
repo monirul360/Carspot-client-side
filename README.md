@@ -1,6 +1,10 @@
 # Carspot 
 
-# live site link : https://carspot-cf9bf.web.app/
+## live site link : https://carspot-cf9bf.web.app/
+
+# short description  
+
+###  Carspot is a Car houe inventory management website. Car houe can be fully managed through this site. There is a system to add items. And there is a system to delete items. One thing that can be said that a very beautiful management web site.
 
 # Features
 - There is a login system
