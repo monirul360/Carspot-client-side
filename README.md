@@ -1,3 +1,28 @@
+# Carspot 
+
+# live site link : https://carspot-cf9bf.web.app/
+
+# Features
+- There is a login system
+- with Google and login or account creation can be done
+- There are 6 cards on the home page. The cards have car information
+- There is a button called Manage Inventories. Clicking there will show all the cards
+- The site is fully responsive
+- There is a section called Car inspection where there is a picture and some writing
+- When logged in user  You will get 3 options
+ - This site has some private pages. If user does not login, you will not be able to win there
+- There is a footer at the very bottom. There are some options . Which can be very useful for the user
+
+# Technology use
+- React js 
+- react toast
+- Html ,css , js 
+- react router
+ - google firebase
+ - react firebase hooks
+ - Mongodb
+ - Express js
+ 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
