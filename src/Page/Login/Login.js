@@ -50,9 +50,9 @@ const Login = () => {
                 <div className="form-content">
                     <form onSubmit={signiUser} >
                         <label htmlFor="email"><p>Email</p></label>
-                        <input type="email" onBlur={emailBluer} name="email" placeholder='Enter your email' id="email" />
+                        <input type="email" onBlur={emailBluer} name="email" placeholder='Enter your email' id="email" required />
                         <label htmlFor="password"><p>Password</p></label>
-                        <input type="password" onBlur={passwordBluer} name="password" placeholder='Enter your password' id="password" />
+                        <input type="password" onBlur={passwordBluer} name="password" placeholder='Enter your password' id="password" required />
                         {loading && <p>Loading...</p>}
                         <p style={{ color: 'red', padding: '7px' }}>{error?.message}</p>
                         <input type="submit" value="Login With Us" />

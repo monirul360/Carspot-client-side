@@ -27,8 +27,8 @@ const Footer = () => {
                                 <li><Link to='/'>Google+</Link></li>
                             </ul>
                         </div>
-                        <div>
-                            <h3>Quick Links</h3>
+                        <div className='quick_links'>
+                            <h3> Quick Links </h3>
                             <ul>
                                 <li><Link to='/'>About Us</Link></li>
                                 <li><Link to='/'>Faqs</Link></li>

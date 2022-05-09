@@ -148,7 +148,7 @@ a {
 
 /* ==========Responsive code ============== */
 
-@media(max-width:768px) {
+@media(max-width:992px) {
     .nav-toggler {
         display: block;
     }
@@ -178,6 +178,6 @@ a {
     }
 
     #logout {
-        margin-left: 0;
+        width: 120px;
     }
 }

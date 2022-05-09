@@ -45,7 +45,7 @@
 
 /* ===================responsive code ================ */
 
-@media (max-width:768px) {
+@media (max-width:992px) {
     .items-container {
         padding: 30px 5px;
         background-color: #F6F6F6;
@@ -53,15 +53,16 @@
     }
 
     .items-grid-content {
-        width: 100%;
+        width: 95%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
         margin: 20px auto;
         box-sizing: border-box;
     }
 }
 
-@media (max-width:576px) {
+@media (max-width:768px) {
     .items-grid-content {
         width: 100%;
         display: grid;

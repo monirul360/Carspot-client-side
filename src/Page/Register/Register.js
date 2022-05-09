@@ -36,11 +36,14 @@ const Register = () => {
                 <div className="form-content">
                     <form onSubmit={createUser}>
                         <label htmlFor="name"><p>Name</p></label>
-                        <input type="text" name="name" placeholder='Your name' id="name" />
+                        <input type="text" name="name" placeholder='Your name' id="name" required />
+
                         <label htmlFor="email"><p>Email</p></label>
-                        <input type="email" onBlur={emailBluer} name="email" placeholder='Enter your email' id="email" />
+                        <input type="email" onBlur={emailBluer} name="email" placeholder='Enter your email' id="email" required />
+
                         <label htmlFor="password"><p>Password</p></label>
-                        <input type="password" onBlur={passwordBluer} name="password" placeholder='Enter your password' id="password" />
+                        <input type="password" onBlur={passwordBluer} name="password" placeholder='Enter your password' id="password" required />
+
                         {loading && <p>Loading...</p>}
                         <p style={{ color: 'red', padding: '7px' }}>{error?.message}</p>
                         <input type="submit" value="Register" />

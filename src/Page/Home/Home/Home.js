@@ -30,8 +30,8 @@ const Home = () => {
                         <div className="left-content">
                             <div className='text-container'>
                                 <h4>Want To Sale Your Car ?</h4>
-                                <h2>ARE YOU LOOKING FOR A CAR</h2>
-                                <p>Search your car in our Inventory and request a quote on the vehicle of your choosing.</p>
+                                <h2>DO YOU WANT TO SELL YOUR CAR</h2>
+                                <p>Request search your car in our Inventory and a quote on the vehicle of your choosing.</p>
                             </div>
                             <div>
                                 <img src={sell} alt="" />
@@ -39,9 +39,9 @@ const Home = () => {
                         </div>
                         <div className="right-content">
                             <div className='text-container'>
-                                <h4>Want To Sale Your Car ?</h4>
-                                <h2>DO YOU WANT TO SELL YOUR CAR</h2>
-                                <p>Request search your car in our Inventory and a quote on the vehicle of your choosing.</p>
+                                <h4>Want To buy Your Car ?</h4>
+                                <h2>ARE YOU LOOKING FOR A CAR</h2>
+                                <p>Search your car in our Inventory and request a quote on the vehicle of your choosing.</p>
                             </div>
                             <div>
                                 <img src={sell1} alt="" />
