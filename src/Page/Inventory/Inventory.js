@@ -1,16 +1,53 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import './Inventory.css';
 const Inventory = () => {
     const { id } = useParams();
     const [items, setItems] = useState({});
     useEffect(() => {
-        const url = `https://arcane-mountain-88654.herokuapp.com/items/${id}`;
+        const url = `http://localhost:5000/items/${id}`;
         fetch(url)
             .then(Response => Response.json())
             .then(data => setItems(data));
 
-    }, [])
+    }, []);
+    const handleUpdateDelivered = () => {
+        const quantity = items.quantity - 1;
+        const updated = { quantity };
+        const url = `https://arcane-mountain-88654.herokuapp.com/items/${id}`;
+        fetch(url, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(updated)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log('success', data);
+                toast('Delivered successfully!');
+            })
+    }
+    const handleUpdatequantity = event => {
+        event.preventDefault();
+        const quantity = event.target.quantity.value;
+        const updated = { quantity };
+        // send data to the server
+        const url = `https://arcane-mountain-88654.herokuapp.com/items/${id}`;
+        fetch(url, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(updated)
+        })
+            .then(res => res.json())
+            .then(data => {
+                toast('Quantity add successfully!');
+                event.target.reset();
+            })
+    }
     return (
         <div>
             <div className="inventory-container">
@@ -33,11 +70,11 @@ const Inventory = () => {
                         <h3>Supplier: {items.supplier}</h3>
                         <h3>Quantity : {items.quantity}</h3>
                         <div className="delivered">
-                            <button>Delivered</button>
+                            <button onClick={() => handleUpdateDelivered()}>Delivered</button>
                         </div>
                         <div className="quantity">
-                            <form >
-                                <input type="text" name="quantity" placeholder='Quantity add' id="" required />
+                            <form onSubmit={handleUpdatequantity} >
+                                <input type="number" name="quantity" placeholder='Quantity add' id="" required />
                                 <input type="submit" value="ADD" />
                             </form>
                         </div>
