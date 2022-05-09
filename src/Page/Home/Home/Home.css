@@ -1,0 +1,100 @@
+.car-inspection-section {
+    padding: 30px;
+}
+
+.car-inspection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+
+.car-inspection>div {
+    padding: 15px;
+}
+
+.car-inspection-img img {
+    width: 100%;
+}
+
+#inspection-title {
+    color: rgb(49, 47, 47);
+    margin: 12px 0;
+}
+
+#inspection-description {
+    font-size: 18px;
+    color: rgb(68, 63, 63);
+    margin-bottom: 20px;
+}
+
+#car-inspection-button {
+    padding: 8px 20px;
+    background-color: #B31217;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+}
+
+.container {
+    padding: 20px 20px;
+    background-color: #F6F6F6;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+
+.container-grid>div {
+    margin: 30px;
+    padding: 10px;
+}
+
+.text-container {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.text-container h2 {
+    color: rgb(49, 47, 47);
+    margin: 12px 0;
+}
+
+.text-container h4 {
+    color: rgb(66, 64, 64);
+    font-size: 17px;
+    font-style: italic;
+}
+
+.text-container p {
+    font-size: 16px;
+    color: rgb(68, 63, 63);
+}
+
+.container-grid img {
+    width: 100%;
+}
+
+/* =============responsive code ============= */
+
+@media (max-width:768px) {
+    .car-inspection {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 40px;
+    }
+
+    .container-grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 0px;
+    }
+
+    .container-grid>div {
+        margin: 10px;
+        padding: 10px;
+    }
+
+}
