@@ -1,0 +1,15 @@
+.blogs {
+    width: 95%;
+    padding: 30px;
+    margin: 20px auto;
+    box-shadow: 5px 5px 20px rgb(163, 155, 155);
+}
+
+#blogs-title {
+    margin-bottom: 13px;
+    color: #0B3A6C;
+}
+
+.blogs p {
+    font-size: 17px;
+}
