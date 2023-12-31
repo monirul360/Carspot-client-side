@@ -45,7 +45,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <hr />
-                    <p style={{ padding: '10px', textAlign: 'center' }}>&copy; 2022 Carspot All rights reserved</p>
+                    <p style={{ padding: '10px', textAlign: 'center' }}>&copy; 2024 Carspot All rights reserved</p>
                 </div>
             </footer>
         </div>

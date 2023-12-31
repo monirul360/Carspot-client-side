@@ -6,7 +6,7 @@ const Myitems = () => {
     const [user] = useAuthState(auth);
     const [myitems, setMyitems] = useState([]);
     useEffect(() => {
-        const url = `https://arcane-mountain-88654.herokuapp.com/myitems?email=${user?.email}`;
+        const url = `https://car-hb01.onrender.com/myitems?email=${user?.email}`;
         fetch(url)
             .then(Response => Response.json())
             .then(data => setMyitems(data))
@@ -15,7 +15,7 @@ const Myitems = () => {
     const myitemsDelete = id => {
         const deleteAlt = window.confirm();
         if (deleteAlt) {
-            const delurl = `https://arcane-mountain-88654.herokuapp.com/myitems/${id}`;
+            const delurl = `https://car-hb01.onrender.com/myitems/${id}`;
             fetch(delurl, {
                 method: 'DELETE',
             })

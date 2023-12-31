@@ -6,7 +6,7 @@ const Inventory = () => {
     const { id } = useParams();
     const [items, setItems] = useState({});
     useEffect(() => {
-        const url = `http://localhost:5000/items/${id}`;
+        const url = `https://car-hb01.onrender.com/items/${id}`;
         fetch(url)
             .then(Response => Response.json())
             .then(data => setItems(data));
@@ -15,7 +15,7 @@ const Inventory = () => {
     const handleUpdateDelivered = () => {
         const quantity = items.quantity - 1;
         const updated = { quantity };
-        const url = `https://arcane-mountain-88654.herokuapp.com/items/${id}`;
+        const url = `https://car-hb01.onrender.com/items/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -34,7 +34,7 @@ const Inventory = () => {
         const quantity = event.target.quantity.value;
         const updated = { quantity };
         // send data to the server
-        const url = `https://arcane-mountain-88654.herokuapp.com/items/${id}`;
+        const url = `https://car-hb01.onrender.com/items/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {

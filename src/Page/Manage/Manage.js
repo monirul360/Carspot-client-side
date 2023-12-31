@@ -7,7 +7,7 @@ const Manage = () => {
     const ManageDel = id => {
         const confirm = window.confirm();
         if (confirm) {
-            const delurl = `https://arcane-mountain-88654.herokuapp.com/myitems/${id}`;
+            const delurl = `https://car-hb01.onrender.com/myitems/${id}`;
             fetch(delurl, {
                 method: 'DELETE',
             })

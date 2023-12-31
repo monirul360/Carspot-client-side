@@ -17,7 +17,7 @@ const Additem = () => {
             img: e.target.img.value
         }
         e.target.reset();
-        fetch('https://arcane-mountain-88654.herokuapp.com/items', {
+        fetch('https://car-hb01.onrender.com/items', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
